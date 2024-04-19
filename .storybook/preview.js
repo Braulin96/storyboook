@@ -1,6 +1,7 @@
 /** @type { import('@storybook/react').Preview } */
-import { ThemeProvider, theme, CssReset, Box } from "@chakra-ui/react";
-import { addDecorator } from "@storybook/react";
+// import { ThemeProvider, theme, CssReset, Box } from "@chakra-ui/react";
+// import { addDecorator } from "@storybook/react";
+import '@storybook/addon-console'
 
 export const preview = {
   parameters: {
