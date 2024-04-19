@@ -1,15 +1,8 @@
 /** @type { import('@storybook/react').Preview } */
-import {ThemeProvider, theme, CssReset, Box} from '@chakra-ui/react'
-import { addDecorator } from '@storybook/react'
+import { ThemeProvider, theme, CssReset, Box } from "@chakra-ui/react";
+import { addDecorator } from "@storybook/react";
 
-// addDecorator (story => (
-//   <ThemeProvider theme={theme}>
-//     <CssReset/>
-//     <Box m='4'>{story()}</Box>
-
-//   </ThemeProvider>
-// ))
-const preview = {
+export const preview = {
   parameters: {
     controls: {
       matchers: {
@@ -18,8 +11,15 @@ const preview = {
       },
     },
   },
-  
 };
 
-export default preview;
-
+// export const decorators = [
+//   (Story) => (
+//     <ThemeProvider theme={theme}>
+//       <CssReset />
+//       <Box m="4">
+//         <Story />
+//       </Box>
+//     </ThemeProvider>
+//   ),
+// ];
