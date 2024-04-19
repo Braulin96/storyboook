@@ -1,7 +1,8 @@
 /** @type { import('@storybook/react').Preview } */
 // import { ThemeProvider, theme, CssReset, Box } from "@chakra-ui/react";
-// import { addDecorator } from "@storybook/react";
-import '@storybook/addon-console'
+// import { addDecorator, addParameters } from "@storybook/react";
+import { INITIAL_VIEWPORTS, MINIMAL_VIEWPORTS } from '@storybook/addon-viewport'
+// import '@storybook/addon-console'
 
 export const preview = {
   parameters: {
@@ -10,6 +11,13 @@ export const preview = {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
+    },
+    viewport: {
+      viewports: {
+        ...INITIAL_VIEWPORTS,
+        ...MINIMAL_VIEWPORTS,
+      },
+      defaultViewport: 'iphone14promax',
     },
   },
 };
