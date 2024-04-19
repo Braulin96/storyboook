@@ -1,4 +1,14 @@
 /** @type { import('@storybook/react').Preview } */
+import {ThemeProvider, theme, CssReset, Box} from '@chakra-ui/react'
+import { addDecorator } from '@storybook/react'
+
+// addDecorator (story => (
+//   <ThemeProvider theme={theme}>
+//     <CssReset/>
+//     <Box m='4'>{story()}</Box>
+
+//   </ThemeProvider>
+// ))
 const preview = {
   parameters: {
     controls: {
@@ -8,6 +18,8 @@ const preview = {
       },
     },
   },
+  
 };
 
 export default preview;
+
