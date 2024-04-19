@@ -8,7 +8,8 @@ export default {
     comment: Button,
     argTypes: {
         onClick: {action: 'clicked'}
-    }
+    },
+    tags: ['autodocs'], // to show the doc in our story
 }
 
 const Template = args => <Button {...args}/>

@@ -10,6 +10,7 @@ export default {
   args: {
     children: "Button",
   },
+  tags: ['autodocs'], // docs stories
   //to pass decorators to all our stories:
   decorators: [(story) => <Center>{story()}</Center>],
 };
